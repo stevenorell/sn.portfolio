@@ -1,0 +1,19 @@
+.header {
+  padding: 2rem;
+}
+
+.logo {
+  background: black;
+  display: block;
+  width: 4rem;
+  height: 4rem;
+  padding: 0.75rem;
+
+  &::before {
+    content: svg-load('../../public/images/sn-logo.svg');
+    display: block;
+    background-size: contain;
+    width: 100%;
+    height: auto;
+  }
+}
