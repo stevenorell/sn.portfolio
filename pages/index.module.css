@@ -1,0 +1,28 @@
+.main {
+  padding-left: 8rem;
+  padding-top: 4rem;
+}
+
+.hero,
+.contact {
+  margin-bottom: 4rem;
+  font-size: 4em;
+
+  & small {
+    display: block;
+    font-size: 0.5em;
+    color: var(--c--red);
+  }
+
+  & strong {
+    font-weight: var(--t--font-weight-normal);
+  }
+
+  & a {
+    text-decoration: underline;
+  }
+}
+
+.highlight {
+  color: var(--c--red);
+}

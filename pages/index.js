@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import styles from '../styles/Home.module.css'
+import styles from './index.module.css'
 
 import Header from '../components/Header'
 
@@ -16,15 +16,19 @@ export default function Home() {
       <Header />
 
       <main className={styles.main}>
-        <small>I&rsquo;m a </small>
-        <strong>Digital Designer <span className={styles.highlight}>/</span><br /> Creative Developer</strong>
+        <section className={styles.hero}>
+          <small>I&rsquo;m a </small>
+          <strong>Digital Designer <span className={styles.highlight}>/</span><br /> Creative Developer</strong>
+        </section>
 
-        <small>I&rsquo;m on</small>
-        <strong>
-          <a href="https://dribbble.com/stevenorell" target="_blank" rel="noreferrer">Dribbble</a>&nbsp;<span className={styles.highlight}>/</span>&nbsp;
-          <a href="https://github.com/stevenorell" target="_blank" rel="noreferrer">Github</a>&nbsp;<span className={styles.highlight}>/</span>&nbsp;
-          <a href="https://medium.com/@stevenorell" target="_blank" rel="noreferrer">Medium</a>
-        </strong>
+        <section className={styles.contact}>
+          <small>I&rsquo;m on</small>
+          <strong>
+            <a href="https://dribbble.com/stevenorell" target="_blank" rel="noreferrer">Dribbble</a>&nbsp;<span className={styles.highlight}>/</span>&nbsp;
+            <a href="https://github.com/stevenorell" target="_blank" rel="noreferrer">Github</a>&nbsp;<span className={styles.highlight}>/</span>&nbsp;
+            <a href="https://medium.com/@stevenorell" target="_blank" rel="noreferrer">Medium</a>
+          </strong>
+        </section>
       </main>
     </div>
   )
