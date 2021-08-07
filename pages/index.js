@@ -8,8 +8,8 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Create Next App</title>
-        <meta name="description" content="Steve Norell | Digital Creative Director" />
+        <title>Steve Norell | Digital Creative Director</title>
+        <meta name="description" content="Digital Creative Director, UX Designer, and Front-end Developer in Boise, ID" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
