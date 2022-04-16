@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import Link from 'next/link'
 import styles from './index.module.css'
 
 import Header from '../components/Header'
@@ -28,6 +29,12 @@ export default function Home() {
             <a href="https://github.com/stevenorell" target="_blank" rel="noreferrer">Github</a>&nbsp;<span className={styles.highlight}>/</span>&nbsp;
             <a href="https://medium.com/@stevenorell" target="_blank" rel="noreferrer">Medium</a>
           </strong>
+        </section>
+
+        <section>
+          <Link href="/projects/example-project">
+            <a>Example Project</a>
+          </Link>
         </section>
       </main>
     </div>
