@@ -5,10 +5,11 @@ import styles from './index.module.css';
 
 import Header from '../components/Header';
 import SocialNav from '../components/SocialNav';
+import ProjectCards from '../components/ProjectCards';
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <>
       <Head>
         <title>Steve Norell | Digital Creative Director</title>
         <meta name="description" content="Digital Creative Director, UX Designer, and Front-end Developer in Boise, ID" />
@@ -16,13 +17,14 @@ export default function Home() {
 
       <Header />
 
-      <main className={styles.main}>
+      <main>
         <section className={styles.hero}>
-          <small>Steve is a </small>
-          <strong>
-            Digital Creative Director <span className={styles.highlight}>/</span><br />
-            Experience Designer <span className={styles.highlight}>/</span><br />
-            Creative Developer</strong>
+          <h1>Steve Norell is a </h1>
+          <ul>
+            <li>Digital Creative Director</li>
+            <li>Experience Designer</li>
+            <li>Creative Developer</li>
+          </ul>
         </section>
 
         <section className={styles.contact}>
@@ -30,12 +32,8 @@ export default function Home() {
           <SocialNav />
         </section>
 
-        <section>
-          <Link href="/projects/example-project">
-            <a>Example Project</a>
-          </Link>
-        </section>
+        <ProjectCards />
       </main>
-    </div>
+    </>
   )
 }

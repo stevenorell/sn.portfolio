@@ -1,5 +1,13 @@
 .header {
-  padding: 2rem;
+  padding: 0.75rem;
+
+  @media (min-width: 768px) {
+    padding: 1.5rem;
+  }
+
+  @media (min-width: 1080px) {
+    padding: 2rem;
+  }
 }
 
 .logo {
@@ -9,6 +17,10 @@
   height: 4rem;
   padding: 0.75rem;
   margin: 0;
+
+  @media (min-width: 1080px) {
+    position: fixed;
+  }
 
   &::before {
     content: svg-load('../../public/images/sn-logo.svg');

@@ -1,5 +1,5 @@
-import styles from './styles.module.css'
-import Link from 'next/link'
+import styles from './styles.module.css';
+import Link from 'next/link';
 
 const SocialNav = () => {
   return (
@@ -26,4 +26,4 @@ const SocialNav = () => {
   )
 }
 
-export default SocialNav
+export default SocialNav;

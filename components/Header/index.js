@@ -1,5 +1,5 @@
-import styles from './styles.module.css'
-import Link from 'next/link'
+import styles from './styles.module.css';
+import Link from 'next/link';
 
 const Header = () => {
   return (
@@ -17,4 +17,4 @@ const Header = () => {
   )
 }
 
-export default Header
+export default Header;
