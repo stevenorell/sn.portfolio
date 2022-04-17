@@ -1,0 +1,26 @@
+.title {
+  margin-bottom: 6rem;
+
+  @media (min-width: 1080px) {
+    width: 50%;
+  }
+
+  & h1 {
+    color: var(--c--red);
+  }
+}
+
+.subtitle {
+  display: block;
+  font-size: min(6vw, 4rem);
+}
+
+.agency {
+  font-size: 1.5rem;
+  margin-top: 2rem;
+
+  & a {
+    color: var(--c--red);
+    text-decoration: underline;
+  }
+}

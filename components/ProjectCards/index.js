@@ -8,7 +8,7 @@ const ProjectCards = () => {
       <h2>A few projects</h2>
       <div className={styles.cards}>
         <Card
-          href="/projects/example-project"
+          href="/projects/visit-idaho"
           imgSrc="/images/projects/visit-idaho/thumb.jpg"
           imgAlt="A family stands overlooking a scenic lake with backs to the viewer"
           prefix="visitidaho.org"
