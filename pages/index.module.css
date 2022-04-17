@@ -3,8 +3,7 @@
   padding-top: 4rem;
 }
 
-.hero,
-.contact {
+.hero {
   margin-bottom: 4rem;
   font-size: 4em;
 
@@ -17,9 +16,24 @@
   & strong {
     font-weight: var(--t--font-weight-normal);
   }
+}
 
+.contact {
+  display: flex;
+  align-items: center;
+
+  font-size: 1.5rem;
+}
+
+.email {
+  margin-right: 2rem;
+}
+
+.hero,
+.contact {
   & a {
     text-decoration: underline;
+    color: var(--c--red);
   }
 }
 

@@ -1,8 +1,8 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../../index.module.css'
+import Head from 'next/head';
+import Image from 'next/image';
+import styles from '../../index.module.css';
 
-import Header from '../../../components/Header'
+import Header from '../../../components/Header';
 
 export default function ExampleProject() {
   return (
@@ -10,7 +10,6 @@ export default function ExampleProject() {
       <Head>
         <title>Steve Norell | Digital Creative Director</title>
         <meta name="description" content="Digital Creative Director, UX Designer, and Front-end Developer in Boise, ID" />
-        <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <Header />

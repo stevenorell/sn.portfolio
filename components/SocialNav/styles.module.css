@@ -1,0 +1,17 @@
+.socialNav {
+  & ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  & li {
+    padding-right: 1.5rem;
+
+    & a,
+    & svg {
+      display: block;
+    }
+  }
+}

@@ -1,9 +1,10 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import Link from 'next/link'
-import styles from './index.module.css'
+import Head from 'next/head';
+import Image from 'next/image';
+import Link from 'next/link';
+import styles from './index.module.css';
 
-import Header from '../components/Header'
+import Header from '../components/Header';
+import SocialNav from '../components/SocialNav';
 
 export default function Home() {
   return (
@@ -11,24 +12,22 @@ export default function Home() {
       <Head>
         <title>Steve Norell | Digital Creative Director</title>
         <meta name="description" content="Digital Creative Director, UX Designer, and Front-end Developer in Boise, ID" />
-        <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <Header />
 
       <main className={styles.main}>
         <section className={styles.hero}>
-          <small>I&rsquo;m a </small>
-          <strong>Digital Creative Director <span className={styles.highlight}>/</span><br /> Creative Developer</strong>
+          <small>Steve is a </small>
+          <strong>
+            Digital Creative Director <span className={styles.highlight}>/</span><br />
+            Experience Designer <span className={styles.highlight}>/</span><br />
+            Creative Developer</strong>
         </section>
 
         <section className={styles.contact}>
-          <small>I&rsquo;m on</small>
-          <strong>
-            <a href="https://dribbble.com/stevenorell" target="_blank" rel="noreferrer">Dribbble</a>&nbsp;<span className={styles.highlight}>/</span>&nbsp;
-            <a href="https://github.com/stevenorell" target="_blank" rel="noreferrer">Github</a>&nbsp;<span className={styles.highlight}>/</span>&nbsp;
-            <a href="https://medium.com/@stevenorell" target="_blank" rel="noreferrer">Medium</a>
-          </strong>
+          <a className={styles.email} href="mailto:design@stevenorell.com">design@stevenorell.com</a>
+          <SocialNav />
         </section>
 
         <section>
