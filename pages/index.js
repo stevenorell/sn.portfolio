@@ -4,6 +4,7 @@ import Link from 'next/link';
 import styles from './index.module.css';
 
 import Header from '../components/Header';
+import Footer from '../components/Footer';
 import SocialNav from '../components/SocialNav';
 import ProjectCards from '../components/ProjectCards';
 
@@ -34,6 +35,8 @@ export default function Home() {
 
         <ProjectCards />
       </main>
+
+      <Footer />
     </>
   )
 }
