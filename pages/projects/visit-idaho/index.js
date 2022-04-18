@@ -35,6 +35,11 @@ export default function ExampleProject() {
           />
         </div>
 
+        <div className="columns-2 text-blue-100">
+          <div>Left col</div>
+          <div>Right col</div>
+        </div>
+
       </main>
 
       <Footer />
