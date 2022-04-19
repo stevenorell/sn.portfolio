@@ -1,0 +1,27 @@
+.title {
+  margin-bottom: 6rem;
+
+  @media (min-width: 1080px) {
+    width: 50%;
+  }
+
+  & h1 {
+    @apply text-fuchsia-600;
+  }
+}
+
+.subtitle {
+  display: block;
+  font-size: min(6vw, 4rem);
+  line-height: 1.2;
+}
+
+.agency {
+  font-size: 1.5rem;
+  margin-top: 2rem;
+
+  & a {
+    color: var(--c--red);
+    text-decoration: underline;
+  }
+}

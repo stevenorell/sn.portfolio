@@ -1,35 +1,45 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from './index.module.css'
+import Head from 'next/head';
+import Image from 'next/image';
+import Link from 'next/link';
+import { motion } from 'framer-motion';
+import styles from './index.module.css';
 
-import Header from '../components/Header'
+import Footer from '../components/Footer';
+import SocialNav from '../components/SocialNav';
+import ProjectCards from '../components/ProjectCards';
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <>
       <Head>
         <title>Steve Norell | Digital Creative Director</title>
         <meta name="description" content="Digital Creative Director, UX Designer, and Front-end Developer in Boise, ID" />
-        <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Header />
-
-      <main className={styles.main}>
+      <motion.main
+        exit={{ opacity: 0 }}
+        initial={{ y: 100, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ duration: 0.35 }}
+      >
         <section className={styles.hero}>
-          <small>I&rsquo;m a </small>
-          <strong>Digital Creative Director <span className={styles.highlight}>/</span><br /> Creative Developer</strong>
+          <h1>Steve Norell is a </h1>
+          <ul>
+            <li>Digital Creative Director</li>
+            <li>Experience Designer</li>
+            <li>Creative Developer</li>
+          </ul>
         </section>
 
         <section className={styles.contact}>
-          <small>I&rsquo;m on</small>
-          <strong>
-            <a href="https://dribbble.com/stevenorell" target="_blank" rel="noreferrer">Dribbble</a>&nbsp;<span className={styles.highlight}>/</span>&nbsp;
-            <a href="https://github.com/stevenorell" target="_blank" rel="noreferrer">Github</a>&nbsp;<span className={styles.highlight}>/</span>&nbsp;
-            <a href="https://medium.com/@stevenorell" target="_blank" rel="noreferrer">Medium</a>
-          </strong>
+          <a className={styles.email} href="mailto:design@stevenorell.com">design@stevenorell.com</a>
+          <SocialNav />
         </section>
-      </main>
-    </div>
+
+        <ProjectCards />
+        <Footer />
+
+      </motion.main>
+    </>
   )
 }
