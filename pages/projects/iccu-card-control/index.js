@@ -21,7 +21,7 @@ export default function Project() {
   return (
     <div>
       <Head>
-        <title>CBH Homes | Website UX & Visual Design | Steve Norell</title>
+        <title>ICCU Card Control | Product Page Design & Dev | Steve Norell</title>
         <meta name="description" content="" />
       </Head>
 
