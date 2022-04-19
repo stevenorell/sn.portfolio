@@ -44,6 +44,14 @@ h3 {
   box-shadow: 0 4px 24px rgba(0, 0, 0, 0.3);
 }
 
+.img-shadow-inner {
+  @apply shadow-inner;
+
+  & > span {
+    z-index: -2;
+  }
+}
+
 * {
   box-sizing: border-box;
 }

@@ -5,7 +5,7 @@ import Card from '../Card';
 const ProjectCards = () => {
   return (
     <section className={styles.projectCards}>
-      <h2>A few projects</h2>
+      <h2 className="text-fuchsia-600 text-xl mb-8">A few projects</h2>
       <div className={styles.cards}>
         <Card
           href="/projects/visit-idaho"

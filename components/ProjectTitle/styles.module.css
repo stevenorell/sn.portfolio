@@ -6,13 +6,14 @@
   }
 
   & h1 {
-    color: var(--c--red);
+    @apply text-fuchsia-600;
   }
 }
 
 .subtitle {
   display: block;
   font-size: min(6vw, 4rem);
+  line-height: 1.3;
 }
 
 .agency {
