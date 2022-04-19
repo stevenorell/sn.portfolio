@@ -26,7 +26,7 @@ export default function Project() {
         exit={{ opacity: 0 }}
         initial={{ y: 100, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
-        transition={{ duration: 10 }}
+        transition={{ duration: 0.35 }}
       >
         <ProjectTitle
           title="visitidaho.org"
