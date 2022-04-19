@@ -2,7 +2,6 @@ import '../styles/globals.css'
 import { AnimatePresence } from 'framer-motion';
 
 import Header from '../components/Header';
-import Footer from '../components/Footer';
 
 function MyApp({ Component, pageProps, router }) {
   return (
@@ -15,8 +14,6 @@ function MyApp({ Component, pageProps, router }) {
       >
         <Component {...pageProps} key={router.route} />
       </AnimatePresence>
-
-      <Footer />
     </>
   )
 }

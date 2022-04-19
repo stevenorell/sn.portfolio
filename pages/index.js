@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { motion } from 'framer-motion';
 import styles from './index.module.css';
 
+import Footer from '../components/Footer';
 import SocialNav from '../components/SocialNav';
 import ProjectCards from '../components/ProjectCards';
 
@@ -36,6 +37,8 @@ export default function Home() {
         </section>
 
         <ProjectCards />
+        <Footer />
+
       </motion.main>
     </>
   )

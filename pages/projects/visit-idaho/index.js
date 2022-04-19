@@ -3,6 +3,7 @@ import Image from 'next/image';
 import { motion } from 'framer-motion';
 import styles from './styles.module.css';
 
+import Footer from '../../../components/Footer';
 import ProjectTitle from '../../../components/ProjectTitle';
 import ProjectCards from '../../../components/ProjectCards';
 
@@ -115,6 +116,7 @@ export default function ExampleProject() {
         </div>
 
         <ProjectCards />
+        <Footer />
 
       </motion.main>
     </div>
