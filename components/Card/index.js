@@ -4,7 +4,10 @@ import Link from 'next/link';
 const Card = (props) => {
   return (
     <article className={styles.card}>
-      <Link href={props.href}>
+      <Link
+        href={props.href}
+        scroll={false}
+      >
         <a>
           <img
             src={props.imgSrc}

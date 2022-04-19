@@ -1,9 +1,8 @@
 import Head from 'next/head';
 import Image from 'next/image';
+import { motion } from 'framer-motion';
 import styles from './styles.module.css';
 
-import Header from '../../../components/Header';
-import Footer from '../../../components/Footer';
 import ProjectTitle from '../../../components/ProjectTitle';
 import ProjectCards from '../../../components/ProjectCards';
 
@@ -22,9 +21,12 @@ export default function ExampleProject() {
         <meta name="description" content="" />
       </Head>
 
-      <Header />
-
-      <main>
+      <motion.main
+        exit={{ opacity: 0 }}
+        initial={{ y: 100, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ duration: 0.35 }}
+      >
         <ProjectTitle
           title="visitidaho.org"
           subtitle="Inspiring families to find memorable adventures in Idaho"
@@ -114,9 +116,7 @@ export default function ExampleProject() {
 
         <ProjectCards />
 
-      </main>
-
-      <Footer />
+      </motion.main>
     </div>
   )
 }

@@ -1,10 +1,9 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
+import { motion } from 'framer-motion';
 import styles from './index.module.css';
 
-import Header from '../components/Header';
-import Footer from '../components/Footer';
 import SocialNav from '../components/SocialNav';
 import ProjectCards from '../components/ProjectCards';
 
@@ -16,9 +15,12 @@ export default function Home() {
         <meta name="description" content="Digital Creative Director, UX Designer, and Front-end Developer in Boise, ID" />
       </Head>
 
-      <Header />
-
-      <main>
+      <motion.main
+        exit={{ opacity: 0 }}
+        initial={{ y: 100, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ duration: 0.35 }}
+      >
         <section className={styles.hero}>
           <h1>Steve Norell is a </h1>
           <ul>
@@ -34,9 +36,7 @@ export default function Home() {
         </section>
 
         <ProjectCards />
-      </main>
-
-      <Footer />
+      </motion.main>
     </>
   )
 }

@@ -4,7 +4,10 @@ import Link from 'next/link';
 const Header = () => {
   return (
     <header className={styles.header}>
-      <Link href="/">
+      <Link
+        href="/"
+        scroll={false}
+      >
         <a>
           <h1 className={styles.logo}>
             <span className="sr-only">
