@@ -20,7 +20,7 @@ export default function Home() {
         exit={{ opacity: 0 }}
         initial={{ y: 100, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
-        transition={{ duration: 0.35 }}
+        transition={{ duration: 10 }}
       >
         <section className={styles.hero}>
           <h1>Steve Norell is a </h1>
