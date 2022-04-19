@@ -14,7 +14,7 @@ import article from './images/article.jpg';
 import backpack from './images/backpack.jpg';
 import eighteenSummers from './images/18summers.jpg';
 
-export default function ExampleProject() {
+export default function Project() {
   return (
     <div className={styles.container}>
       <Head>
