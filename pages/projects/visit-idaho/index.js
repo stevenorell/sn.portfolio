@@ -19,7 +19,7 @@ export default function Project() {
     <div className={styles.container}>
       <Head>
         <title>Visit Idaho | Website UX & Visual Design | Steve Norell</title>
-        <meta name="description" content="" />
+        <meta name="description" content="Visual and user experience design to bring family-friendly Idaho adventure online and promote all that Idaho has to offer." />
       </Head>
 
       <motion.main

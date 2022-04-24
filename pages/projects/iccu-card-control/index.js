@@ -22,7 +22,7 @@ export default function Project() {
     <div>
       <Head>
         <title>ICCU Card Control | Product Page Design & Dev | Steve Norell</title>
-        <meta name="description" content="" />
+        <meta name="description" content="A product launch landing page for Idaho Central Credit Union's Card Control app." />
       </Head>
 
       <motion.main

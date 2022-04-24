@@ -1,24 +1,23 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
+import styles from './styles.module.css';
 
 import Footer from '../../../components/Footer';
 import ProjectTitle from '../../../components/ProjectTitle';
 import ProjectCards from '../../../components/ProjectCards';
 
-import homefinder from './images/homefinder.jpg';
-import listing from './images/listing.jpg';
-import quizResults from './images/quiz-results.jpg';
-import profile from './images/profile.jpg';
-import filters from './images/filters.jpg';
-
+import homepageHero from './images/homepage-hero.jpg';
+import deals from './images/deals.jpg';
+import coffee from './images/coffee.jpg';
+import extraman from './images/extraman.jpg';
 
 export default function Project() {
   return (
-    <div>
+    <div className={styles.container}>
       <Head>
-        <title>CBH Homes | Website UX & Visual Design | Steve Norell</title>
-        <meta name="description" content="Visual, UX, and technology direction for Idaho's number one homebuilder." />
+        <title>Chevron ExtraMile | Website Creative Direction | Steve Norell</title>
+        <meta name="description" content="Creative and technology direction for a new website for chevronextramile.com" />
       </Head>
 
       <motion.main
@@ -28,19 +27,19 @@ export default function Project() {
         transition={{ duration: 0.35 }}
       >
         <ProjectTitle
-          title="cbhhomes.com"
-          subtitle="Matching Idahoans with their Shiny, Awesome Dream Home"
+          title="chevronextramile.com"
+          subtitle="Clean Convenience"
           agency="Drake Cooper"
           agencyUrl="https://drakecooper.com"
         />
 
         <div className="rounded-lg shadow-xl overflow-hidden">
           <Image
-            src={homefinder}
+            src={homepageHero}
             layout="responsive"
             width={1160}
             height={654}
-            alt="Visit Idaho website homepage, with title Childhood is Short Summer is Shorter"
+            alt="Website UI showing a Chevron ExtraMile logo, navigation, and promo message with title EARN FREEBIES and a superhero character holding a phone with ExtraMile Extras Join the Club"
           />
         </div>
 
@@ -50,59 +49,47 @@ export default function Project() {
             <ul className="text-xl">
               <li>Creative Direction</li>
               <li>Technology Direction</li>
-              <li>UX Design</li>
-              <li>Visual Design</li>
             </ul>
           </div>
           <div className="mb-8">
             <h2 className="text-fuchsia-600 text-xl mb-4">Key Contributions</h2>
-            <ul className="list-disc pl-6">
-              <li>Lead multiple UI and platform refreshes</li>
-              <li>Designed a match score algorithm based on user preferences</li>
-              <li>Lead integration with Salesforce CRM</li>
-              <li>Launched e-commerce reservation system</li>
+            <ul className="list-disc pl-6 mb-4">
+              <li>Migrated to a content management system</li>
+              <li>Implemented new product portfolio</li>
+              <li>Lead coordination with multiple stakeholders, translation, and location finder API</li>
             </ul>
+            <p><a href="https://chevronextramile.com" target="_blank" rel="noopener noreferrer" className="text-fuchsia-600 underline">View Live Site</a></p>
           </div>
         </div>
 
         <div className="grid md:grid-cols-3 gap-8 mb-8 lg:mb-20">
           <div className="rounded-lg shadow-xl overflow-hidden">
             <Image
-              src={listing}
+              src={deals}
               layout="responsive"
-              width={371}
-              height={802}
-              alt="Mobile size webpage showing an overview of Kirkham Hot Springs with details"
+              width={370}
+              height={800}
+              alt="Mobile size webpage showing a carousel of promotional offers"
             />
           </div>
           <div className="rounded-lg shadow-xl overflow-hidden">
             <Image
-              src={quizResults}
+              src={coffee}
               layout="responsive"
-              width={371}
-              height={802}
-              alt="Mobile size webpage showing a listing for Caribou Lodge with an image of the lodge and description"
+              width={370}
+              height={800}
+              alt="Mobile size webpage showing a coffee cups with ExtraMile branding"
             />
           </div>
           <div className="rounded-lg shadow-xl overflow-hidden">
             <Image
-              src={profile}
+              src={extraman}
               layout="responsive"
-              width={371}
-              height={802}
-              alt="Mobile size webpage showing an article titled 20 Budget-friendly Idaho Advertures for 2020"
+              width={370}
+              height={800}
+              alt="Mobile size webpage showing an introduction to ExtraMan"
             />
           </div>
-        </div>
-
-        <div className="shadow-xl overflow-hidden mb-8 lg:mb-20">
-          <Image
-            src={filters}
-            layout="responsive"
-            width={1160}
-            height={197}
-            alt="Visit Idaho website homepage, with title Childhood is Short Summer is Shorter"
-          />
         </div>
 
         <ProjectCards />
