@@ -36,7 +36,6 @@ export default function Home() {
           <SocialNav />
         </section>
 
-        <ProjectCards />
         <Footer />
 
       </motion.main>
