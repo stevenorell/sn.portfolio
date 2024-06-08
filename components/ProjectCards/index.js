@@ -8,14 +8,6 @@ const ProjectCards = () => {
       <h2 className="text-fuchsia-600 text-xl mb-8">A few projects</h2>
       <div className={styles.cards}>
         <Card
-          href="/projects/chevron-extramile"
-          imgSrc="/images/projects/chevron-extramile/thumb.jpg"
-          imgAlt=""
-          prefix="chevronextramile.com"
-          title="Clean Convenience"
-          subhead="Website Creative Direction"
-        />
-        <Card
           href="/projects/visit-idaho"
           imgSrc="/images/projects/visit-idaho/thumb.jpg"
           imgAlt="A family stands overlooking a scenic lake with backs to the viewer"
@@ -38,14 +30,6 @@ const ProjectCards = () => {
           prefix="iccu.com/cardcontrol"
           title="Take control"
           subhead="Product Page Design & Dev"
-        />
-        <Card
-          href="/projects/44-north-vodka"
-          imgSrc="/images/projects/44-north-vodka/thumb.jpg"
-          imgAlt="44º North Vodka logo with cloudy sky and wheat field horizon"
-          prefix="44northvodka.com"
-          title="Vodka Grown in Idaho"
-          subhead="Website UX & Visual Design"
         />
       </div>
     </section>
