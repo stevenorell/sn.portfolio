@@ -105,16 +105,6 @@ export default function Project() {
           />
         </div>
 
-        <div className="rounded-lg shadow-xl overflow-hidden mb-8 lg:mb-20">
-          <Image
-            src={eighteenSummers}
-            layout="responsive"
-            width={1160}
-            height={653}
-            alt="Website with Visit Idaho logo showing a family taking a selfie in front of a waterfall with a layered 18Summers logo graphic"
-          />
-        </div>
-
         <ProjectCards />
         <Footer />
 
