@@ -65,7 +65,6 @@ export default function Project() {
           <div className="mb-8">
             <h2 className="text-fuchsia-600 text-xl mb-4">Key Contributions</h2>
             <p>As part of a launch campaign for Card Control, a new mobile banking app that gives ICCU members more control over their debit and credit cards, we built an immersive animated landing page to highlight the features and benefits. Using scroll position as the main interaction, we created visual representations of the key app features in along with an app UI demo to show it in action.</p>
-            <p><a href="https://www.iccu.com/cardcontrol/" target="_blank" rel="noopener noreferrer" className="text-fuchsia-600 underline">View Live Site</a></p>
           </div>
         </div>
 
